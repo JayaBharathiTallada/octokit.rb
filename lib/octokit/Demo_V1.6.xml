@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-02-18 11:25:22">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Demo_V1.6</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>ce2f775adb33030012bfd100cf9619eb</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-02-18 11:25:22</sys_created_on>
+<sys_id>5a627122dbd0130012bfd100cf961958</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-02-18 11:25:22</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_client_3c4e328fc31102004e44dccdf3d3aee9</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;true&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;active&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;messages/&gt;&lt;name&gt;Hide related lists&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[//update
+function onLoad() {
+	// if browser supports angular and is new UI, hide checklist related list
+	if (g_scratchpad.browserSupported &amp;&amp; g_scratchpad.isNewUI)
+		g_form.hideRelatedList("REL:8f576281c3100200e280dccdf3d3aed8");
+
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2015-07-21 18:21:50&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;3c4e328fc31102004e44dccdf3d3aee9&lt;/sys_id&gt;&lt;sys_mod_count&gt;15&lt;/sys_mod_count&gt;&lt;sys_name&gt;Hide related lists&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Checklist" source="com.glide.ui.checklist"&gt;b3635873a8033200a21c40382c84b8ba&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_3c4e328fc31102004e44dccdf3d3aee9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;karthikn&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-01-24 06:22:59&lt;/sys_updated_on&gt;&lt;table&gt;task&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-536773531</payload_hash>
+<remote_update_set display_value="Demo_V1.6">5a627122dbd0130012bfd100cf961958</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-02-18 11:25:22</sys_created_on>
+<sys_id>1e627122dbd0130012bfd100cf961958</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16126dc43e80000000</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-02-18 11:25:22</sys_updated_on>
+<table>task</table>
+<target_name>Hide related lists</target_name>
+<type>Client Script</type>
+<update_domain>global</update_domain>
+<update_guid>597d7712c1fb030061b8ed3358943b89</update_guid>
+<update_guid_history>597d7712c1fb030061b8ed3358943b89:-536773531,c97d771290fb0300affab48692545887:-1167515268</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_client_50d8ca0ec0a8016601b853a56f814770</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;active&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;messages&gt;I blurred&lt;/messages&gt;&lt;name&gt;Sample: Setting an onBlur Handler&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[//update
+function onLoad() {
+    var control = g_form.getControl('priority');
+    jslog('control = ' + control);
+    control.onblur = myOnBlur;
+}
+
+function myOnBlur() {
+    alert(getMessage('I blurred'));
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;glide.maint&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2006-08-27 18:16:27&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;50d8ca0ec0a8016601b853a56f814770&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;Sample: Setting an onBlur Handler&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Incident" source="com.snc.incident"&gt;7da49cf3a8033200a21c40382c84b811&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_50d8ca0ec0a8016601b853a56f814770&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;karthikn&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-01-24 06:23:12&lt;/sys_updated_on&gt;&lt;table&gt;incident&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+<payload_hash>623672004</payload_hash>
+<remote_update_set display_value="Demo_V1.6">5a627122dbd0130012bfd100cf961958</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-02-18 11:25:22</sys_created_on>
+<sys_id>de627122dbd0130012bfd100cf961958</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16126dc43e80000000</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-02-18 11:25:22</sys_updated_on>
+<table>incident</table>
+<target_name>Sample: Setting an onBlur Handler</target_name>
+<type>Client Script</type>
+<update_domain>global</update_domain>
+<update_guid>188df7165ef7030050394a5aa83ba80a</update_guid>
+<update_guid_history>188df7165ef7030050394a5aa83ba80a:623672004,d88df7160bf7030058cbb2858ff2d908:1215372190</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
