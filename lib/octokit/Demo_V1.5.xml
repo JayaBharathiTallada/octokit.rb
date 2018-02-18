@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-02-18 11:21:07">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Demo_V1.5</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>c3fe375adb33030012bfd100cf961981</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-02-18 11:21:07</sys_created_on>
+<sys_id>b7613122dbd0130012bfd100cf96198d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-02-18 11:21:07</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_28beab035f201000b12e3572f2b477ed</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;incident&lt;/collection&gt;&lt;condition&gt;current.caller_id == gs.getUserID() &amp;amp;&amp;amp; (current.incident_state.changesTo(IncidentState.RESOLVED) || current.incident_state.changesTo(IncidentState.CLOSED) || current.incident_state.changesTo(IncidentState.CANCELED))&lt;/condition&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Caller Close&lt;/name&gt;&lt;order&gt;200&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[//update
+if (current.close_code.nil())
+   current.close_code = "Closed/Resolved by Caller";
+if (current.close_notes.nil())
+   current.close_notes = "Closed by Caller";
+
+var link = '&lt;a href="incident.do?sys_id=' + current.sys_id + '" class="breadcrumb" &gt;' + current.number + '&lt;/a&gt;';
+var message = gs.getMessage('Incident') + ' ' + link + ' ';
+if (current.incident_state.changesTo(IncidentState.CLOSED))
+   message += gs.getMessage('has been permanently closed');
+else if (current.incident_state.changesTo(IncidentState.RESOLVED))
+   message += gs.getMessage('has been resolved');
+else if (current.incident_state.changesTo(IncidentState.CANCELED))
+   message += gs.getMessage('has been canceled');
+gs.addInfoMessage(message);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2011-08-22 17:46:53&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;28beab035f201000b12e3572f2b477ed&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_name&gt;Caller Close&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Incident" source="com.snc.incident"&gt;7da49cf3a8033200a21c40382c84b811&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_28beab035f201000b12e3572f2b477ed&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;karthikn&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-01-24 06:21:18&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=28beab035f201000b12e3572f2b477ed"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>2075698333</payload_hash>
+<remote_update_set display_value="Demo_V1.5">b7613122dbd0130012bfd100cf96198d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-02-18 11:21:07</sys_created_on>
+<sys_id>3f613122dbd0130012bfd100cf96198d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16126db94200000000</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-02-18 11:21:07</sys_updated_on>
+<table>incident</table>
+<target_name>Caller Close</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>581db71232fb0300b2c8fd97d1ebb54d</update_guid>
+<update_guid_history>581db71232fb0300b2c8fd97d1ebb54d:2075698333,901db79e74bb0300967e51fb8ec4825f:329639384</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_0a6ea4aa0a0a0b1d006b92f265683131</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;task&lt;/collection&gt;&lt;condition&gt;javascript:new AffectedUtils().hasAffected(current, "task_group", "task");&lt;/condition&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Affected group notifications&lt;/name&gt;&lt;order&gt;99&lt;/order&gt;&lt;priority/&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[//Test for devops
+//update
+if (current != null) {
+  var thisTask = current.sys_id;
+  var noNotify = new Object();
+
+  var affectedItem = new GlideRecord('task_group');
+  affectedItem.addQuery('task', thisTask);
+  affectedItem.query();
+  while (affectedItem.next()) {
+    var itemSysID = affectedItem.group;
+    var itemName = affectedItem.group.getDisplayValue();
+    if (!noNotify[itemSysID]) {
+      noNotify[itemSysID] = true;
+      gs.log('### Notifying subscribers of ' + itemName);
+      gs.eventQueue('group.affected', current, itemSysID, itemName);
+      notifyParents('sys_user_group', itemSysID);
+    }
+  }
+}
+
+function notifyParents(table, itemSysID) {
+   var item = new GlideRecord(table);
+   item.addQuery('sys_id', itemSysID);
+   item.query();
+   if (item.next()) {
+      if (item.parent) {
+         var parentSysID = item.parent;
+         var parentName = item.parent.getDisplayValue();
+         if (!noNotify[parentSysID]) {
+            gs.log('### Notifying subscribers of ' + parentName);
+            noNotify[parentSysID] = true;
+            gs.eventQueue('group.affected', current, parentSysID, parentName);
+            notifyParents(table, parentSysID);
+         }
+      }
+   }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;glide.maint&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2008-02-11 21:37:46&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;0a6ea4aa0a0a0b1d006b92f265683131&lt;/sys_id&gt;&lt;sys_mod_count&gt;18&lt;/sys_mod_count&gt;&lt;sys_name&gt;Affected group notifications&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Subscription Based Notifications" source="com.glide.notification"&gt;e9431473a8033200a21c40382c84b8d0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_0a6ea4aa0a0a0b1d006b92f265683131&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;karthikn&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-01-24 06:21:32&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;async&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=0a6ea4aa0a0a0b1d006b92f265683131"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-655135448</payload_hash>
+<remote_update_set display_value="Demo_V1.5">b7613122dbd0130012bfd100cf96198d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-02-18 11:21:07</sys_created_on>
+<sys_id>7b613122dbd0130012bfd100cf96198d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16126db94200000000</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-02-18 11:21:07</sys_updated_on>
+<table>task</table>
+<target_name>Affected group notifications</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>3b1db71237fb03006521fde363a93553</update_guid>
+<update_guid_history>3b1db71237fb03006521fde363a93553:-655135448,e730e85a28f30300eb0d9131d93dcca1:-1851468161,a730a01685f30300389d5948438e9c90:962100497,7b90e81677330300a5c072ca1297dbf0:-1193090983</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
