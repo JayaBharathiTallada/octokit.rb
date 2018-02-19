@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-02-19 06:49:47">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Demo_V2.6</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>49649ac0db40130012bfd100cf9619a2</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>Sunil</sys_created_by>
+<sys_created_on>2018-02-19 06:49:46</sys_created_on>
+<sys_id>7aec7532db10130012bfd100cf96192d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>Sunil</sys_updated_by>
+<sys_updated_on>2018-02-19 06:49:46</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_policy_action_fc2739040f0013006a278e8ce1050e52</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><disabled>ignore</disabled><field>approval_set</field><mandatory>ignore</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-29 07:05:45</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>fc2739040f0013006a278e8ce1050e52</sys_id><sys_mod_count>0</sys_mod_count><sys_name>approval_set</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_policy_action_fc2739040f0013006a278e8ce1050e52</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-29 07:05:45</sys_updated_on><table>incident</table><ui_policy display_value="tes2">74b6b9800f0013006a278e8ce1050e27</ui_policy><visible>false</visible></sys_ui_policy_action></record_update>]]></payload>
+<payload_hash>1626971572</payload_hash>
+<remote_update_set display_value="Demo_V2.6">7aec7532db10130012bfd100cf96192d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>Sunil</sys_created_by>
+<sys_created_on>2018-02-19 06:49:46</sys_created_on>
+<sys_id>7eec7532db10130012bfd100cf96192d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161413133980000000</sys_recorded_at>
+<sys_updated_by>Sunil</sys_updated_by>
+<sys_updated_on>2018-02-19 06:49:46</sys_updated_on>
+<table>incident</table>
+<target_name>approval_set</target_name>
+<type>UI Policy Action</type>
+<update_domain>global</update_domain>
+<update_guid>9837790471001300d562618bf28b331f</update_guid>
+<update_guid_history>9837790471001300d562618bf28b331f:1626971572</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
