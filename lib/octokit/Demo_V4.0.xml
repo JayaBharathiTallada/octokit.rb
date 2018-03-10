@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-03-10 12:07:38">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Demo_V4.0</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>45148cf8db00130012bfd100cf961996</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-10 12:07:38</sys_created_on>
+<sys_id>e8ebf0cddb30130012bfd100cf96198a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-10 12:07:38</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_99abcc98c611229201e61dd0aa031339</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Incident activity formatter fields</description><ignore_cache>false</ignore_cache><is_private>false</is_private><name>glide.ui.incident_activity.fields</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>glide.maint</sys_created_by><sys_created_on>2006-04-14 18:31:13</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>99abcc98c611229201e61dd0aa031339</sys_id><sys_mod_count>6</sys_mod_count><sys_name>glide.ui.incident_activity.fields</sys_name><sys_package display_value="Incident" source="com.snc.incident">7da49cf3a8033200a21c40382c84b811</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_99abcc98c611229201e61dd0aa031339</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-30 17:15:27</sys_updated_on><type>string</type><value>assigned_to,cmdb_ci,incident_state,impact,priority,opened_by,work_notes,comments,*Email*,*Relations*,*Attachments*,description,caller_id</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=99abcc98c611229201e61dd0aa031339"/></record_update>]]></payload>
+<payload_hash>-1650196787</payload_hash>
+<remote_update_set display_value="Demo_V4.0">e8ebf0cddb30130012bfd100cf96198a</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-10 12:07:38</sys_created_on>
+<sys_id>acebf0cddb30130012bfd100cf96198a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1614aeff7c00000000</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-10 12:07:38</sys_updated_on>
+<table/>
+<target_name>glide.ui.incident_activity.fields</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>ed5c8de05fcc13009a1f030bcf034c1a</update_guid>
+<update_guid_history>ed5c8de05fcc13009a1f030bcf034c1a:-1650196787,a17cc92ce3c41300ba3881e3c14b7a21:361627137,a586231c300c1300cc639cda3425b956:-1439222320,a6b6235c93c0130025a14d248298ef31:-2039811136,cb8aa2d8a08813008e6e2e7478edb119:1941870624,42aa6a141ec01300ec62267b05b1963f:48232035,1e01d2049f401300b8fbc5cd9bba8e58:-1301814114,a021920082401300d0c27fd1353204eb:1473405793,c9463dc088001300feef97767a9b8827:-352477412,f4467d405e0013005cfa31b4e17bbbec:-418764442,6976b5806e0013000b83362052f5e313:1503581800,9976b58058001300f21bcbd3c6712010:2096332446</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
